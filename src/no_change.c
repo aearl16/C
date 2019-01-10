@@ -14,6 +14,7 @@ int main(void)
 
     //1 is printed
     printf("%d\n" , a);
+    //Try to change value
     try_to_change_it(a);
     /*
     * 1 is printed again because value is passed by value
