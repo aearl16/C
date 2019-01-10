@@ -41,4 +41,3 @@ int main(void)
     (double) sum / CLASS_SIZE, " is the class average");
     return 0;
 }
-
