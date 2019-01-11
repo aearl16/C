@@ -1,7 +1,5 @@
 /*
 * @Author: Aaron Earl
-* Note: Ex 8 Skipped, Windows
-* disallows file with no extension to be run
 * Solution to Ch.1 Ex. 11 from
 * A Book On C
 *
