@@ -1,6 +1,6 @@
 /*
 * @Author: Aaron Earl
-* My solution to Ch.1 Exercises from
+* My solution to Ch.1 Ex. 1 from
 * A Book On C
 *
 * Task:
