@@ -24,5 +24,7 @@ int main(void)
     //cnt = printf("abc abc"); //First print
     //cnt = printf("abc\nabc\n"); //Second print
     cnt = printf("abc\0abc\0"); //Third print
-    printf("\nno. of characters printed: %d\n", cnt);
+    printf("\nNo. of characters printed: %d\n", cnt);
+
+    return 0;
 }

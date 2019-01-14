@@ -20,4 +20,6 @@ int main(void)
 
     a = 333;
     printf("%d\n", a);
+
+    return 0;
 }
