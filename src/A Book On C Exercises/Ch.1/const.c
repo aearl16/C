@@ -1,6 +1,6 @@
 /*
 * @Author: Aaron Earl
-* Note: Ex 17 skipped due to pgm not working
+* Note: Ex 16, 17 skipped due to pgm not working
 * Solution to Ch.1 Ex. 18 from
 * A Book On C
 *
