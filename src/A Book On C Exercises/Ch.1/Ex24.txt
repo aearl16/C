@@ -1,0 +1,7 @@
+Suppose that a is an array of some type and that i is an int. There is a fundamental
+equivalence between the expression a[i] and a certain corresponding pointer
+expression. What is the corresponding pointer expression?
+
+Answer: The pointer *(a + i) and a[i] would point to the address of the same value. *(a + i) is
+the de-reference expression to the value at i in the array. Note a is a constant pointer and
+cannot be changed. See pg. 46 in the book.

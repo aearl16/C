@@ -1,0 +1,26 @@
+In the abc program in Section 1.8, "Arrays, Strings, and Pointers," on page 43, we
+used the loop:
+
+for(; *p != '\0'; ++p)
+{
+    if(*p == 'e')
+        *p = 'E';
+    if(*p == ' ')
+        *p = '\n';
+}
+
+Braces areneeded because the body of the for loop consists of two if statements.
+Change the code to:
+
+for(; *p != '\0'; ++p)
+    if(*p == 'e')
+        *p = 'E';
+    else if(*p == ' ')
+        *p = '\n';
+
+Explain why braces are not needed now. Check to see that the run time behaivior of the program
+is the same as before. Explain why this is so.
+
+Answer: If else statements are considered one block and not a compound statement. Hence no
+braces are needed. Operation is the same as having two ifs, although some compilers require
+the else if be terminated with a final else statement as failsafe.
