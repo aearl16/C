@@ -7,9 +7,14 @@
 * Task: create a flowing water light
 * w/an LED bar graph light
 *
-* Note: Code seems to have errors in it,
-* doesn't run. Copied from Freenove
-* tutorials.
+* Note: Original code from Freenove
+* had errors in it. My code may be
+* modified from the original tutorial.
+*
+* Special Note: If the LED bar graph
+* doesn't light the device may be reversed.
+* The anode side on my devive isn't labeled,
+* and it may be the same on yours.
 */
 
 #include <wiringPi.h>
@@ -17,7 +22,7 @@
 
 #define leds 10
 
-int pins[leds] = {0,1,2,3,4,5,6,7,8,9,10};
+int pins[leds] = {0,1,2,3,4,5,6,7,8,9};
 
 void led_on(int n) //Make led_n on
 {
@@ -39,20 +44,20 @@ int main(void)
 		return 1;
 	}
 
-	for(i = 0; i < leds; i++)
+	for(i = 0; i < leds; ++i)
 	{
 		pinMode(pins[i], OUTPUT); //Set LED pins to OUTPUT
 	}
 
 	while(1)
 	{
-		for(i = 0; i < leds; i++) //Make LEDs on from left to right
+		for(i = 0; i < leds; ++i) //Make LEDs on from left to right
 		{
 			led_on(pins[i]);
 			delay(100);
 			led_off(pins[i]);
 		}
-		for(i = leds - 1; i > -1; i--) //Make LEDs on from right to left
+		for(i = leds - 1; i > -1; --i) //Make LEDs on from right to left
 		{
 			led_on(pins[i]);
 			delay(100);
@@ -60,5 +65,10 @@ int main(void)
 		}
 	}
 
+	//Turn off all of the pins before termination
+	for(i = 0; i < leds; ++i)
+	{
+		led_off(pins[i]);
+	}
 	return 0;
 }
