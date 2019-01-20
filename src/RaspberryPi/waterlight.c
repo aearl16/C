@@ -20,9 +20,9 @@
 #include <wiringPi.h>
 #include <stdio.h>
 
-#define leds 10
+#define leds 11
 
-int pins[leds] = {0,1,2,3,4,5,6,7,8,9};
+int pins[leds] = {0,1,2,3,4,5,6,7,8,9,10};
 
 void led_on(int n) //Make led_n on
 {
@@ -51,7 +51,7 @@ int main(void)
 
 	while(1)
 	{
-		for(i = 0; i < leds; ++i) //Make LEDs on from left to right
+		for(i = 0; i < leds ; ++i) //Make LEDs on from left to right
 		{
 			led_on(pins[i]);
 			delay(100);
@@ -65,10 +65,5 @@ int main(void)
 		}
 	}
 
-	//Turn off all of the pins before termination
-	for(i = 0; i < leds; ++i)
-	{
-		led_off(pins[i]);
-	}
 	return 0;
 }
