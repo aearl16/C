@@ -1,2 +1,7 @@
+# @Author: Aaron Earl
+# Ignore all compiled binaries,
+# and just in case compiled
+# kernel objects
+
 *.o
 *.ok
