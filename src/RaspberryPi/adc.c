@@ -25,7 +25,7 @@
 *
 * Right Pins
 * VDD: +3.3V
-* AOUT: 220OHM Resistor to LED
+* AOUT: 220Ohm Resistor to LED
 * VREF: +3.3V
 * AGND: GND
 * EXT: GND
